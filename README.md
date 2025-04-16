@@ -1,115 +1,115 @@
 # ABS-CNN 🚦📊  
-Abnormal Traffic Detection Based on Attention and Big Step Convolution  
-
-![License](https://img.shields.io/badge/license-MIT-blue.svg)  
-![Tech](https://img.shields.io/badge/built%20with-TensorFlow%2FKeras-blueviolet)  
+Abnormal Traffic Detection Based on Attention and Big Step Convolution
 
 ---
 
 ## 🧠 Overview
 
-**ABS-CNN** is a deep learning model for detecting **abnormal network traffic** using an attention mechanism combined with Big Step Convolution. This project is based on the research paper:  
-> *Abnormal Traffic Detection Based on Attention and Big Step Convolution*.
+**ABS-CNN** is a web-based application powered by a deep learning model to detect **abnormal network traffic** using an Attention mechanism and Big Step Convolution. This project is based on the research paper:
 
-The model aims to identify potential threats or intrusions in network activity by learning from packet-level traffic features.
+> *Abnormal Traffic Detection Based on Attention and Big Step Convolution*
+
+The goal is to provide an interactive, web-friendly platform to showcase real-time abnormal traffic detection using modern web and AI technologies.
 
 ---
 
-## 🚀 Features
+## 🌐 Web App Features
 
-- ✅ Big Step Convolution for efficient feature extraction  
-- ✅ Attention mechanism for focused anomaly detection  
-- ✅ Real-time predictions  
-- ✅ Optimized for high accuracy and performance  
-- ✅ Clean, well-documented TensorFlow/Keras code  
+- ⚡ Built with **Next.js 14 (App Router)** and **Tailwind CSS**
+- 📊 Integrates with **ABS-CNN deep learning model**
+- 🌟 Real-time input simulation (planned)
+- 📁 Modular architecture using `components/`, `hooks/`, `lib/`
+- 🍥 Stylish UI with custom `styles/` and Tailwind
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 🐍  
-- TensorFlow & Keras  
-- NumPy, Pandas, Matplotlib  
-- Scikit-learn  
-- Jupyter Notebook  
+- **Frontend:** Next.js (App Router), Tailwind CSS, TypeScript
+- **Model Backend (Optional):** TensorFlow / Python API (Flask or FastAPI)
+- **Other Tools:** ESLint, Prettier, GitHub
 
 ---
 
-## 📂 Project Structure
+## 📂 Folder Structure
 
-```
+```bash
 ABS-CNN/
-├── data/              # Input dataset (CSV, PCAP, etc.)
-├── model/             # ABS-CNN architecture & training script
-├── results/           # Accuracy, confusion matrix, graphs
-├── utils/             # Preprocessing & helper functions
-├── app/               # Optional streamlit/web demo
+├── app/               # Next.js app router structure
+├── components/        # Reusable UI components
+├── hooks/             # Custom React hooks
+├── lib/               # Utility libraries and config
+├── public/            # Static files (images, etc.)
+├── styles/            # Global and custom styles
 ├── README.md
-└── requirements.txt
+├── next.config.mjs    # Next.js config
+├── tailwind.config.ts # Tailwind CSS config
+├── tsconfig.json      # TypeScript config
+└── package.json       # Project metadata & scripts
 ```
 
 ---
 
-## 🧪 How to Run
+## 🧪 Getting Started
 
-1. Clone the repo:
+1. Clone the repo
+
 ```bash
 git clone https://github.com/MPaulVineeth/ABS-CNN.git
 cd ABS-CNN
 ```
 
-2. Install dependencies:
+2. Install dependencies
+
 ```bash
-pip install -r requirements.txt
+npm install
+# or
+pnpm install
 ```
 
-3. Run the training notebook or script:
+3. Run the development server
+
 ```bash
-python model/train_abs_cnn.py
+npm run dev
 ```
 
-4. (Optional) Launch the web demo:
-```bash
-streamlit run app/demo.py
-```
+4. Open `http://localhost:3000` to see the app in action.
 
 ---
 
-## 📊 Results
+## 📊 Model Integration (Coming Soon)
 
-| Metric          | Value      |
-|-----------------|------------|
-| Accuracy        | 95.3%      |
-| Precision       | 94.8%      |
-| Recall          | 96.1%      |
-| F1 Score        | 95.4%      |
+> The ABS-CNN model backend will be integrated using a Python REST API to allow real-time detection and visualization.
 
-📈 Confusion matrix and ROC curves available in `results/`.
+- Backend API (Flask/FastAPI)
+- Model endpoint to classify traffic as normal/abnormal
+- Streamlit demo page (optional)
 
 ---
 
-## 💡 Future Work
+## 💡 Future Enhancements
 
-- ✨ Add dataset augmentation  
-- 🧪 Integrate with real-time packet capture  
-- 🌐 Deploy model via Flask or FastAPI for live API inference  
+- 🔌 Connect to real packet capture streams
+- 🌐 Deploy model + frontend for public access
+- 📱 Add responsive design and mobile support
+- 📊 Visual charts for network traffic analytics
 
 ---
 
 ## 🤝 Contributions
 
-Open to collaboration! If you're interested in improving the model, adding new datasets, or creating a UI, feel free to fork and send a PR 🚀
+Want to contribute? Feel free to fork the repo and submit a pull request. Bug fixes, feature additions, or UI improvements are welcome!
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
-## 🤛️ Author
+## 👨‍💻 Author
 
 **M Paul Vineeth**  
-[GitHub](https://github.com/MPaulVineeth) | [LinkedIn](https://www.linkedin.com/in/your-link)
+[GitHub](https://github.com/MPaulVineeth) | [LinkedIn](https://www.linkedin.com/in/paul-vineeth-531336220)
 
